@@ -27,7 +27,7 @@ export function Header() {
         <div className={styles.logoWrapper}>
           <Link href="/">
             <span className={`${theSeasonsLight.className} ${styles.ourLogo}`}>
-              H{' '}
+              C{' '}
               <span className={styles.heart}>
                 <Image
                   src="/heart.svg"
@@ -38,7 +38,7 @@ export function Header() {
                   priority
                 />
               </span>{' '}
-              S
+              K
             </span>
           </Link>
         </div>
