@@ -1,0 +1,85 @@
+.form_wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form_group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 100%;
+}
+.form_label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+}
+.form_field {
+  max-width: 300px;
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 3px solid var(--green);
+  outline: 0;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form_field::placeholder {
+  color: transparent;
+}
+.form_field:placeholder-shown ~ .form_label {
+  cursor: text;
+  top: 20px;
+}
+.form_field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 2px;
+  border-image: linear-gradient(
+    to right,
+    var(--green-highlight),
+    var(--green-highlight)
+  );
+  border-image-slice: 1;
+}
+.form_field:focus-within {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 2px;
+  border-image: linear-gradient(
+    to right,
+    var(--green-highlight),
+    var(--green-highlight)
+  );
+  border-image-slice: 1;
+}
+.form_field:hover {
+  border-image: linear-gradient(to right, var(--green-highlight), var(--green));
+  border-image-slice: 1;
+  border-width: 2px;
+}
+
+.form_field:focus ~ .form_label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-weight: 700;
+}
+.form_field:required,
+.form_field:invalid {
+  box-shadow: none;
+}
+.form_field:disabled {
+  color: dimgray;
+  opacity: 0.7;
+}
+
+.form_error {
+  color: var(--red-dark);
+  font-size: 12px;
+}

@@ -1,0 +1,39 @@
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 1rem;
+}
+@media (max-width: 480px) {
+  .row {
+    margin: 0;
+  }
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  border-radius: 4px;
+  width: auto;
+  max-width: 50vw;
+  height: 40vh;
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 480px) {
+  .image {
+    margin: 0;
+    width: 54vh;
+    max-width: calc(100vw - 2rem - 10px);
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+}

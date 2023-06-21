@@ -1,0 +1,171 @@
+.menuFlutuante {
+  z-index: 100;
+  position: absolute;
+  top: calc(var(--menu-width) + 4px);
+  left: -150px;
+  display: flex;
+  background-color: var(--white);
+  flex-direction: column;
+  border-radius: 4px;
+  padding: 8px;
+  box-shadow: -1px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.item {
+  list-style-type: none;
+}
+
+.container {
+  position: relative;
+  width: calc(var(--menu-width) * 2);
+  margin: 10px 0;
+  margin-right: 12px;
+}
+.border {
+  position: absolute;
+  top: calc(var(--menu-width) * -1 + 2px);
+  left: -2px;
+  border-radius: 4px;
+  border: #949494 solid 1px;
+  width: calc(var(--menu-width) * 2 + 4px);
+  height: calc(var(--menu-width) * 2 + 4px);
+}
+.btn {
+  position: absolute;
+  width: calc(var(--menu-width) * 2);
+  height: calc(var(--menu-width) * 2);
+  top: 0;
+  left: 0px;
+  cursor: pointer;
+}
+.btnLeft {
+  background-color: #949494;
+  position: absolute;
+  height: var(--menu-height);
+  width: var(--menu-width);
+  top: var(--menu-height);
+  border-top-left-radius: calc(var(--menu-height) / 2);
+  border-bottom-left-radius: calc(var(--menu-height) / 2);
+  left: 0px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.btnRight {
+  background-color: #949494;
+  position: absolute;
+  height: var(--menu-height);
+  width: var(--menu-width);
+  top: var(--menu-height);
+  left: var(--menu-width);
+  border-top-right-radius: calc(var(--menu-height) / 2);
+  border-bottom-right-radius: calc(var(--menu-height) / 2);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.btnLeft:before {
+  background-color: #949494;
+  position: absolute;
+  width: var(--menu-width);
+  height: var(--menu-height);
+  content: '';
+  top: calc(calc(var(--menu-width) * -2) / 3);
+  border-top-left-radius: calc(var(--menu-height) / 2);
+  border-bottom-left-radius: calc(var(--menu-height) / 2);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.btnLeft:after {
+  background-color: #949494;
+  position: absolute;
+  width: var(--menu-width);
+  height: var(--menu-height);
+  content: '';
+  top: calc(calc(var(--menu-width) * 2) / 3);
+  border-top-left-radius: calc(var(--menu-height) / 2);
+  border-bottom-left-radius: calc(var(--menu-height) / 2);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.btnRight:before {
+  background-color: #949494;
+  position: absolute;
+  width: var(--menu-width);
+  height: var(--menu-height);
+  content: '';
+  top: calc(calc(var(--menu-width) * -2) / 3);
+  border-top-right-radius: calc(var(--menu-height) / 2);
+  border-bottom-right-radius: calc(var(--menu-height) / 2);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.btnRight:after {
+  background-color: #949494;
+  position: absolute;
+  width: var(--menu-width);
+  height: var(--menu-height);
+  content: '';
+  top: calc(calc(var(--menu-width) * 2) / 3);
+  border-top-right-radius: calc(var(--menu-height) / 2);
+  border-bottom-right-radius: calc(var(--menu-height) / 2);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.activeLeft {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background: transparent;
+}
+.activeLeft:before {
+  -webkit-transform: rotateZ(45deg) scaleX(1.4)
+    translate(calc(var(--menu-height) / 2), calc(var(--menu-height) / 2));
+  transform: rotateZ(45deg) scaleX(1.4)
+    translate(calc(var(--menu-height) / 2), calc(var(--menu-height) / 2));
+}
+.activeLeft:after {
+  -webkit-transform: rotateZ(-45deg) scaleX(1.4)
+    translate(
+      calc(var(--menu-height) / 2),
+      calc(calc(var(--menu-height) / 2) * -1)
+    );
+  transform: rotateZ(-45deg) scaleX(1.4)
+    translate(
+      calc(var(--menu-height) / 2),
+      calc(calc(var(--menu-height) / 2) * -1)
+    );
+}
+
+.activeRight {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background: transparent;
+}
+.activeRight:before {
+  -webkit-transform: rotateZ(-45deg) scaleX(1.4)
+    translate(
+      calc(calc(var(--menu-height) / 2) * -1),
+      calc(var(--menu-height) / 2)
+    );
+  transform: rotateZ(-45deg) scaleX(1.4)
+    translate(
+      calc(calc(var(--menu-height) / 2) * -1),
+      calc(var(--menu-height) / 2)
+    );
+}
+.activeRight:after {
+  -webkit-transform: rotateZ(45deg) scaleX(1.4)
+    translate(
+      calc(calc(var(--menu-height) / 2) * -1),
+      calc(calc(var(--menu-height) / 2) * -1)
+    );
+  transform: rotateZ(45deg) scaleX(1.4)
+    translate(
+      calc(calc(var(--menu-height) / 2) * -1),
+      calc(calc(var(--menu-height) / 2) * -1)
+    );
+}
+
+.span {
+  letter-spacing: 0;
+}

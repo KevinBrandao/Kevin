@@ -1,0 +1,45 @@
+.buttonLabel {
+  font-weight: 700;
+}
+.nameWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: 100%;
+}
+.formWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+}
+.form {
+  min-width: 300px;
+}
+.addFieldWrapper{
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  margin-right: -40px;
+}
+.additionalFieldsWrapper{
+  padding: 0;
+  padding-left: 16px;
+}
+.input{
+  width: 100%;
+}
+.sendButtonWrapper{
+  display: flex;
+  justify-content: center;
+  position: relative;  
+}
+
+.success{
+  color: var(--green-highlight);
+  text-align: center;
+}
+.error{
+  color: var(--red-highlight);
+  text-align: center;
+}

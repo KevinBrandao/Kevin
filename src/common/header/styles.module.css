@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoWrapper {
+  position: relative;
+}
+@media (max-width: 480px) {
+  .header {
+    align-items: center;
+  }
+  .logoWrapper {
+    margin: 0 auto;
+  }
+}
+.vercelLogo {
+  color: var(--text);
+}
+
+.ourLogo {
+  display: flex;
+  margin-left: 20%;
+  font-size: 24px;
+}
+.heart {
+  padding: 0;
+  margin: 0;
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+}
+@media (max-width: 480px) {
+  .background {
+    margin: 0 -5px;
+  }
+}
+
+.navBar {
+  display: flex;
+  justify-content: flex-end;
+  width: calc(100vw - 57px - 72px - 40px);
+}
+@media (max-width: 480px) {
+  .navBar {
+    width: calc(100vw - 57px - 72px - 10px);
+  }
+}

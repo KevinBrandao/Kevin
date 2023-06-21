@@ -1,0 +1,38 @@
+
+.imageWrapper {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.image {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  border-radius: 4px;
+  width: auto;
+  max-width: 90vw;
+  height: 40vh;
+  margin-bottom: 0.5rem;
+}
+.image_mobile{
+  display: none;
+}
+@media (max-width: 480px) {
+  .image{
+    display: none;
+  }
+  .image__mobile {
+    margin: 0;
+    width: 54vh;
+    max-width: calc(100vw - 2rem - 10px);
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+}
+.text{
+  text-align: center;
+}

@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 0 10px;
+  }
+}
+.quote {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 0;
+}
+.text {
+  line-height: 1.2;
+  text-align: justify;
+}
