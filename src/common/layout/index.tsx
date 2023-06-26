@@ -28,7 +28,7 @@ export function Layout(props: LayoutProps) {
         {props.children}
       </main>
       <footer className={`${aileronThin.variable}  ${aileronBold.variable} ${styles.footer}`}>
-        Desenvolvido por Samuel Cardoso
+        Desenvolvido por Kevin Brandão
       </footer>
     </>
   )
