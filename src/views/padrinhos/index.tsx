@@ -5,8 +5,8 @@ import styles from './styles.module.css'
 const padrinhos: CardProps[] = [
   {
     caption: '',
-    imgSrc: '/padrinhos/DenisJessica.jpg',
-    name: 'Denis e Jessica',
+    imgSrc: '/padrinhos/daniGabriel.jpg',
+    name: 'Gabriel e Daniele',
   },
   {
     caption: '',
