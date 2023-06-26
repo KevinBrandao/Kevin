@@ -10,53 +10,18 @@ const padrinhos: CardProps[] = [
   },
   {
     caption: '',
-    imgSrc: '/padrinhos/GetulioBia.jpg',
-    name: 'Getulio e Bia',
+    imgSrc: '/padrinhos/gabrielDesire.jpg',
+    name: 'Gabriel e Desire',
   },
   {
     caption: '',
     imgSrc: '/padrinhos/GuilhermeTuany.jpg',
-    name: 'Guilherme e Tuany',
+    name: '',
   },
   {
     caption: '',
     imgSrc: '/padrinhos/JamiroConceição.jpg',
-    name: 'Jamiro e Maria Conceição',
-  },
-  {
-    caption: '',
-    imgSrc: '/padrinhos/JoaoAna.jpg',
-    name: 'João Pedro e Anelise',
-  },
-  {
-    caption: '',
-    imgSrc: '/padrinhos/Pedro.jpg',
-    name: 'Pedro',
-  },
-  {
-    caption: '',
-    imgSrc: '/padrinhos/Rosa.jpg',
-    name: 'Rosa',
-  },
-  {
-    caption: '',
-    imgSrc: '/padrinhos/Salueder.jpg',
-    name: 'Salueder',
-  },
-  {
-    caption: '',
-    imgSrc: '/padrinhos/SauloMariana.jpg',
-    name: 'Saulo e Mariana',
-  },
-  {
-    caption: '',
-    imgSrc: '',
-    name: 'Silvana',
-  },
-  {
-    caption: '',
-    imgSrc: '/padrinhos/WelterAnaPaula.jpg',
-    name: 'Welter e Ana Paula',
+    name: '',
   },
 ]
 
