@@ -21,7 +21,7 @@ export function ListaPresentes() {
       <p>
         Você pode consultá-la online neste {" "}
         <Link
-          href="https://www.querodecasamento.com.br/lista-de-casamento/heloisa-franca-samuel-fernandes"
+          href="https://www.querodecasamento.com.br/lista-de-casamento/kevin-caroline"
           className={styles.link}
         >
           link
@@ -30,22 +30,22 @@ export function ListaPresentes() {
       </p>
       <p>
         Você também pode consultá-la presencialmente em uma das lojas do
-        Magazine Luiza e na loja Casa Única. Basta passar nossos nomes{' '}
-        <b>Heloísa França</b> e <b>Samuel Cardoso</b>.
+        Magazine Luiza. Basta passar nossos nomes{' '}
+        <b>Caroline Noguira</b> e <b>Kevin Brandão</b>.
       </p>
       <br />
       <br />
       <div className={styles.logos}>
-        <Link href="https://www.google.com/maps/place/Casa+%C3%B9nica+Franca/@-20.5438706,-47.3994811,17z/data=!4m6!3m5!1s0x94b0a627025eacdb:0xd7942b2ff1c6bd33!8m2!3d-20.5438706!4d-47.3969062!16s%2Fg%2F1pv3gt4bz">
+        <Link href="">
           <Image
             className={styles.logo}
-            src="/casa_unica.jpeg"
+            src="/casa.jpeg"
             width={300}
             height={300}
-            alt="Logo Casa Unica"
+            alt=""
           />
         </Link>
-        <Link href="https://m.querodecasamento.com.br/lista-de-casamento/heloisa-franca-samuel-fernandes">
+        <Link href="https://www.querodecasamento.com.br/lista-de-casamento/kevin-caroline">
           <Image
             className={styles.logo}
             src={Magalu}

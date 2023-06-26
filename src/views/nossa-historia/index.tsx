@@ -6,7 +6,7 @@ export function NossaHistoria() {
     <div>
       <section className={styles.wrapper}>
         <h3>Nossa história</h3>
-        <span className={styles.quote}>Versão Casal</span>
+        <span className={styles.quote}>Carol e Kevin</span>
         <p className={styles.text}>
         Deus em sua infinita bondade permitiu que cruzássemos nossos caminhos. E depois de 8 anos de história,
         resolvemos concretizar o sacramento do matrimônio. Estamos muito felizes e ansiosos para vivermos esse momento ao
