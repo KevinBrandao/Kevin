@@ -15,8 +15,8 @@ const padrinhos: CardProps[] = [
   },
   {
     caption: '',
-    imgSrc: '/padrinhos/GuilhermeTuany.jpg',
-    name: '',
+    imgSrc: '/padrinhos/luanLavinia.jpg',
+    name: 'Luan e Lavinia',
   },
   {
     caption: '',
